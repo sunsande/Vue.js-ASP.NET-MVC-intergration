@@ -280,5 +280,7 @@ Next we go to the ASP.NET MVC view file we created earlier and we add to it:
 
 </body>
 </html>
-
 ```
+
+Now we can start the ASP.NET MVC application we created and voilà:
+![Production ready](img/ready_prod.png)
