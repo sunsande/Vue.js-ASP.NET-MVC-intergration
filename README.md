@@ -77,5 +77,7 @@ Open the command line and navigate to the `<<solution/project>>` folder (... `MV
 ```
 vue create vuejs_src
 ```
+![Command propmt](img/vuejs_command.png)
+
 
 
