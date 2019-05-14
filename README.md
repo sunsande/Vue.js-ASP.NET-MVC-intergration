@@ -18,3 +18,5 @@ At the time of writing I have Visual Studio Professional 2017/ Version 15.9.11 w
 ## The ASP.NET MVC Project
 
 ![Selecting the ASP.NET MVC project template](img/MVC_Project.PNG)
+
+![Selecting the ASP.NET MVC project template](img/MVC_project_options.png)
