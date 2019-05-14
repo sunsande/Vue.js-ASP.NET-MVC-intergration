@@ -248,4 +248,37 @@ If you do not specify the `outputDir` you will get everything in the `vuejs_src/
 
 So now let's build the components:
 ```
+npm run build
+```
 
+If you go to the `../vuejs/` folder you will find `feature1.js`, `feature2.js` and the `*.html` files generated from the templates. Currently I do not know how/if one can suppress their creation. There is one more file created `js/chunk-vendors.js`. I do not know how to configure  the Vue.js CLI to put this file along with the others and not unter the `js/` folder. Anyway it is not really big limitation.
+
+Next we go to the ASP.NET MVC view file we created earlier and we add to it:
+```razor
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ASP.NET MVC  and Vue.js Integration</title>
+
+    <link href="~/vuejs/feature1.js" rel=preload as=script>
+    <link href="~/vuejs/feature2.js" rel=preload as=script>
+    <link href="~/vuejs/js/chunk-vendors.js" rel=preload as=script>
+</head>
+<body>
+    <h1>ASP.NET MVC  and Vue.js Integration</h1>
+
+    <noscript><strong>We're sorry but vuejs_src doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
+
+    <div id=f1App></div>
+    <div id=f2App></div>
+
+    <script src="~/vuejs/js/chunk-vendors.js"></script>
+    <script src="~/vuejs/feature1.js"></script>
+    <script src="~/vuejs/feature2.js"></script>
+
+</body>
+</html>
+
+```
