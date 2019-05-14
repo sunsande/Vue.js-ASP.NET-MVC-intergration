@@ -63,3 +63,7 @@ We will keep the view simple:
 </body>
 </html>
 ```
+
+And so we are ready on the ASP.NET MVC part:
+
+
