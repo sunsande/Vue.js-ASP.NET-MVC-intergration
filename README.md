@@ -206,7 +206,7 @@ Loading `http://localhost:8080/index1.html` gives the same result. If we want to
 
 You can manipulate the `filename` options in the `vue.config.js` to get the `Feature2` component loaded as default (`index.html`) or whatever other way you may want.
 
-### Setting up Mode 3 (or Integrate the Production Versions of Feature1 and Feature2 in ASP.NTE MVC View)
+### Setting up Mode 3 (or Integrate the Production Versions of Feature1 and Feature2 in ASP.NET MVC View)
 
 First we have to add some options to the `vue.config.js`:
 ```javascript
@@ -235,8 +235,7 @@ module.exports = {
             title: 'Hanako Feature 2',
             chunks: ['chunk-vendors', 'chunk-common', 'hanakoFeature2']
         }
-    },
-
+    }
 }
 ```
 **Notes:**
