@@ -80,6 +80,8 @@ vue create vuejs_src
 ![Command propmt](img/vuejs_command.png)
 
 I would select the defaults here, but you may configure the Vue.js project as needed:
-- kk
+- run on the command line `cd vuejs_src`
+- run `npm run serve`
+- the result should be  something like: ![MVC in the browser](img/vuejs_running.png)
 
 
