@@ -177,6 +177,7 @@ Similarly we create `featureTest2.html`. Note that `f1App`and `f2App` correspond
 We changed the name of the default template from `index.html` to `featureTest[1/2].html` so now we have to tell to Vue.js to use the new templates. For that we need configuration file - we create `vuejs_src/vue.config.js`:
 
 ```javascript
+//vuejs_src/vue.config.js
 module.exports = {
     pages: {
         feature1: {
@@ -204,3 +205,38 @@ So now if we run `npm run serve` and start web browser we will see:
 Loading `http://localhost:8080/index1.html` gives the same result. If we want to check the `Feature2` component we load `http://localhost:8080/index2.html`.
 
 You can manipulate the `filename` options in the `vue.config.js` to get the `Feature2` component loaded as default (`index.html`) or whatever other way you may want.
+
+### Setting up Mode 3 (or Integrate the Production Versions of Feature1 and Feature2 in ASP.NTE MVC View)
+
+First we have to add some options to the `vue.config.js`:
+```javascript
+module.exports = {
+    filenameHashing: false,
+    productionSourceMap: false,
+    outputDir: '../vuejs/',
+    configureWebpack: {
+        devtool: 'source-map',
+        output: {
+            filename: '[name].js'
+        }
+    },
+    pages: {
+        hanakoFeature1: {
+            entry: 'src/hf1.js',
+            template: 'public/hanako_feature.html',
+            filename: 'index1.html',
+            title: 'Hanako Feature 1',
+            chunks: ['chunk-vendors', 'chunk-common', 'hanakoFeature1']
+        },
+        hanakoFeature2: {
+            entry: 'src/hf2.js',
+            template: 'public/hanako_feature.html',
+            filename: 'index.html',
+            title: 'Hanako Feature 2',
+            chunks: ['chunk-vendors', 'chunk-common', 'hanakoFeature2']
+        }
+    },
+
+}
+```
+**Notes:**
