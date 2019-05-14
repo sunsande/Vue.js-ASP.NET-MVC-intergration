@@ -19,7 +19,7 @@ At the time of writing I have Visual Studio Professional 2017/ Version 15.9.11 w
 
 ![Selecting the ASP.NET MVC project template](img/MVC_Project.PNG)
 
-![Selecting the ASP.NET MVC project template](img/MVC_project_options.png)
+![Template Options](img/MVC_project_options.png)
 
 The we add `MVC 5 Controller - Empty` to the `Controllers` folder. We name it `HomeController` and leave the generated code as it is:
 ```csharp
@@ -45,3 +45,6 @@ namespace MVC_Vuejs.Controllers
 The reason behind the name `HomeController` is that this is the name of the `Default` route in the `RouteConfig.cs`. So in this way the `Index` action will be automatically executed when the website is opened in the browser without  further configuration.
 
 Further we define the view for the `Index` action. Just right-click inside the `Index()` method and select `Add View ...`:
+
+![Add View ...](img/AddView.png)
+
