@@ -1,4 +1,4 @@
-# Vue.js-ASP.NET-MVC-intergration
+# Vue.js ASP.NET MVC Intergration
 How to integrate Vue.js into an existing ASP.Net MVC (not Core!) application (including development integration)
 
 ## Motivation
