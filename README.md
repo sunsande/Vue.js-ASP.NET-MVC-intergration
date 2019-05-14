@@ -16,3 +16,5 @@ We will start with an empty Asp.Net MVC Project. Then we will add only one trivi
 At the time of writing I have Visual Studio Professional 2017/ Version 15.9.11 with .NET 4.7 and Vue.js CLI 3.7.0 and Vue.js 2.6.10.
 
 ## The ASP.NET MVC Project
+
+![Selecting the ASP.NET MVC project template](img/)
