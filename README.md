@@ -312,3 +312,12 @@ We only have to create one additional build step to do so. To acheive it we add 
 }
 
 ```
+
+There is another small inconvenience here to fix. The result of this new command:
+```
+npm run build:dev
+```
+are only the `feature1.js` and `feature2.js` components (much bigger in size!). So we have to comment the lines in the ASP.NET MVC view file for the `chunk-vendors.js` - otherwise the browser will show `404 Not Found` error. But after that you only have to reaload the page (`Ctrl+F5`) and there it is - the Vue.js developer tools work now perfectly:
+
+![Mode 2](img/mode2.png)
+
