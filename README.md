@@ -290,3 +290,25 @@ Note that if you want to debug the application in the browser using the Vue.js d
 
 ![Production mode debug](img/vuetools_prod.png)
 
+So let's enable that in the next step.
+
+### Setting up Mode 2 (or Integrate the Developer Versions of Feature1 and Feature2 in ASP.NET MVC View)
+
+We only have to create one additional build step to do so. To acheive it we add new `build:dev` command to our `vuejs_src/package.json`:
+
+```json
+{
+  "name": "vuejs_src",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+--> "build:dev": "vue-cli-service build src/f1.js src/f2.js --mode development",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+  ...
+}
+
+```
