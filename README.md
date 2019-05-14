@@ -251,7 +251,7 @@ So now let's build the components:
 npm run build
 ```
 
-If you go to the `../vuejs/` folder you will find `feature1.js`, `feature2.js` and the `*.html` files generated from the templates. Currently I do not know how/if one can suppress their creation. There is one more file created `js/chunk-vendors.js`. I do not know how to configure  the Vue.js CLI to put this file along with the others and not unter the `js/` folder. Anyway it is not really big limitation.
+If you go to the `../vuejs/` folder you will find `feature1.js`, `feature2.js` and the `*.html` files generated from the templates. Currently I do not know how/if one can suppress their creation. There is one more file created `js/chunk-vendors.js`. I do not know how to configure  the Vue.js CLI to put this file along with the others and not under the `js/` folder. Anyway it is not really big limitation.
 
 Next we go to the ASP.NET MVC view file we created earlier and we add to it:
 ```razor
