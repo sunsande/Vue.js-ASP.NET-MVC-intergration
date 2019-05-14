@@ -111,7 +111,7 @@ So here particularly we will create two extremely simple Vue.js components named
 
 ### Creating the Example Feature1 and Feature2 Vue.js Components
 
-These will be trivial components just showing a string. In the folder `vuejs_src/src` we create:
+These will be trivial components just showing a string. In the folder `vuejs_src/src` we create `Feature1.vue`:
 ```vue.js
 // vuejs_src/src/Feature1.vue
 <template>
@@ -128,4 +128,19 @@ These will be trivial components just showing a string. In the folder `vuejs_src
 ```
 
 And similarly the `Feature2.vue`.
+
+After that we create 2 Javascript files which load the Feature1.vue and Feature2.vue. In the folder `vuejs_src/src` we create `f1.js`:
+```javascript
+// vuejs_src/src/f1.js
+import Vue from 'vue'
+import F1 from './Feature1.vue'
+
+Vue.config.productionTip = false
+
+new Vue({
+  render: h => h(F1),
+}).$mount('#f1App')
+```
+
+And similarly the `f2.js` (notice `f1 -> f2` and `#f1App -> #f2App`).
 
