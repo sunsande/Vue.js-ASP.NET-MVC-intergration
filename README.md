@@ -109,4 +109,20 @@ So here particularly we will create two extremely simple Vue.js components named
 > 2) Vue.js development components integrated into the ASP.NET MVC views
 > 3) Vue.js components in production mode integrated into the ASP.NET MVC views
 
+### Creating the Example Feature1 and Feature2 Vue.js Components
+
+These will be trivial components just showing a string. In the folder `vuejs_src/src` we create:
+```vue.js
+<template>
+  <p>
+    Hello from Feature 1
+  </p>
+</template>
+
+<script>
+</script>
+
+<style>
+</style>
+```
 
