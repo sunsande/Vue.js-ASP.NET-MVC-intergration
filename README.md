@@ -48,3 +48,18 @@ Further we define the view for the `Index` action. Just right-click inside the `
 
 ![Add View ...](img/AddView.png)
 
+We will keep the view simple:
+
+```razor
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ASP.NET MVC  and Vue.js Integration</title>
+</head>
+<body>
+    <h1>ASP.NET MVC  and Vue.js Integration</h1>
+</body>
+</html>
+```
