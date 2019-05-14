@@ -174,7 +174,7 @@ We have just deleted one important file - the `public/index.html`. Vue.js uses i
 
 Similarly we create `featureTest2.html`. Note that `f1App`and `f2App` correspond to the mounting points of the `Feature1` and `Feature2` components.
 
-We changed the name of the default template from `index.html` to `featureTest.html` so now we have to tell to Vue.js to use the new templates. For that we need configuration file - we create `vuejs_src/vue.config.js`:
+We changed the name of the default template from `index.html` to `featureTest[1/2].html` so now we have to tell to Vue.js to use the new templates. For that we need configuration file - we create `vuejs_src/vue.config.js`:
 
 ```javascript
 module.exports = {
