@@ -79,5 +79,7 @@ vue create vuejs_src
 ```
 ![Command propmt](img/vuejs_command.png)
 
+I would select the defaults here, but you may configure the Vue.js project as needed:
+- kk
 
 
