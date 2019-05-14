@@ -84,4 +84,8 @@ I would select the defaults here, but you may configure the Vue.js project as yo
 - run `npm run serve`
 - the result should be  something like: ![MVC in the browser](img/vuejs_running.png)
 
+Now if you navigate to `http://localhost:8080/` you should be able to see the Vue.js default `Hello World` page.
+
+Good to notice is that the Vue.js project comes with all kinds of extras like `.gitignore` file. So it is ready to be included in the Visual Studio solution. There you should click on the `Show All Files` button (in the toolbar on the `Solution Explorer`).
+
 
