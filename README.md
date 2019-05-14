@@ -98,7 +98,7 @@ So now we have the Vue.js project integrated into our ASP.NET MVC solution. Next
 
 > When developing Vue.js projects I prefer to use Visualt Studio Code (instead of Visual Studio alone). There is no problem to do so in the workflow described here. In your file explorer you just right-click on the vuejs_src folder and select `Open with Code`. From then on you can work with both editors. Normally I work in Visual Studio for ASP.NET MVC controllers/views and C# code and in Visual Studio Code for Vue.js/Javascript code. 
 
-### Workflow Description (what exactly are we tring to achieve?)
+### Workflow Description (what exactly are we trying to achieve?)
 
 So imagine now we have an existing ASP.NET MVC project and we would like to add some nice new Vue.js components into it. We will develop these new components inside the `vuejs_src` project and put them ready for use to the ASP.NET MVC project.
 
