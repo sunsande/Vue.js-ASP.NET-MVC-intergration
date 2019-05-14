@@ -200,3 +200,7 @@ module.exports = {
 So now if we run `npm run serve` and start web browser we will see:
 
 ![Mode 1](img/mode1.png)
+
+Loading `http://localhost:8080/index1.html` gives the same result. If we want to check the `Feature2` component we load `http://localhost:8080/index2.html`.
+
+You can manipulate the `filename` options in the `vue.config.js` to get the `Feature2` component loaded as default (`index.html`) or whatever other way you may want.
