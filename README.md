@@ -41,3 +41,7 @@ namespace MVC_Vuejs.Controllers
     }
 }
 ```
+
+The reason behind the name `HomeController` is that this is the name of the `Default` route in the `RouteConfig.cs`. So in this way the `Index` action will be automatically executed when the website is opened in the browser without  further configuration.
+
+Further we define the view for the `Index` action. Just right-click inside the `Index()` method and select `Add View ...`:
