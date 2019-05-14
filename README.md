@@ -113,6 +113,7 @@ So here particularly we will create two extremely simple Vue.js components named
 
 These will be trivial components just showing a string. In the folder `vuejs_src/src` we create:
 ```vue.js
+// vuejs_src/src/Feature1.vue
 <template>
   <p>
     Hello from Feature 1
@@ -125,4 +126,6 @@ These will be trivial components just showing a string. In the folder `vuejs_src
 <style>
 </style>
 ```
+
+And similarly the `Feature2.vue`.
 
