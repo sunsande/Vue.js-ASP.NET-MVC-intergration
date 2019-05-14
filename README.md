@@ -88,4 +88,6 @@ Now if you navigate to `http://localhost:8080/` you should be able to see the Vu
 
 Good to notice is that the Vue.js project comes with all kinds of extras like `.gitignore` file. So it is ready to be included in the Visual Studio solution. There you should click on the `Show All Files` button (in the toolbar on the `Solution Explorer`).
 
+> **WARNING**: When adding the vuejs_src folder to the project DO NOT RIGHT-CLICK on the `vuejs_src` -> `Include In Project`! - there is a bug ot something and Visual Studio freezes. Maybe because of the size of the `node_modules` folder.
 
+We do not need to include the `node_modules` folder into the solution anyways, so just right-click any file or subfolder in `vuejs_src` and select `Include In Project`. (at the time of writing they are only 7 so it is not a big deal)
