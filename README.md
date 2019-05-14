@@ -69,3 +69,13 @@ And so we are ready on the ASP.NET MVC part:
 ![MVC in the browser](img/MVC_browser.PNG)
 
 ## Adding the Vue.js Project
+
+Here I assume you have `Vue.js` and `Vue.js CLI` already installed.
+
+Open the command line and navigate to the `<<solution/project>>` folder (... `MVC_Vuejs/MVC_Vuejs`). We would like to have the Vue.js project inside it. It's name would be `vuejs_src`. So we create the Vue.js project there using the Vue.js CLI:
+
+```
+vue init vuejs_src
+```
+
+
