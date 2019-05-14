@@ -284,3 +284,7 @@ Next we go to the ASP.NET MVC view file we created earlier and we add to it:
 
 Now we can start the ASP.NET MVC application we created and voilà:
 ![Production ready](img/ready_prod.png)
+
+Not that if want to debug the application in the browser using the Vue.js developer tools you won't be able to do so, because we builded the components in production mode.
+![Production mode debug](img/vuetools_prod.png)
+
