@@ -96,6 +96,13 @@
     <Content Include="vuejs\index.html" />
     <Content Include="vuejs\index2.html" />
     <Content Include="vuejs\js\chunk-vendors.js" />
+    <Content Include="vuejs_src\.gitignore" />
+    <Content Include="vuejs_src\babel.config.js" />
+    <Content Include="vuejs_src\public\featureTest1.html" />
+    <Content Include="vuejs_src\public\featureTest2.html" />
+    <Content Include="vuejs_src\src\f1.js" />
+    <Content Include="vuejs_src\src\f2.js" />
+    <Content Include="vuejs_src\vue.config.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -110,6 +117,11 @@
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="vuejs_src\package-lock.json" />
+    <Content Include="vuejs_src\package.json" />
+    <Content Include="vuejs_src\README.md" />
+    <Content Include="vuejs_src\src\Feature1.vue" />
+    <Content Include="vuejs_src\src\Feature2.vue" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -120,6 +132,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="vuejs_src\src\assets\" />
+    <Folder Include="vuejs_src\src\components\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
