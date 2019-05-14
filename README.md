@@ -9,7 +9,7 @@ I will show a working solution for a simple straightforward setup (with almost n
 
 ## The Scenario
 
-We will start with an empty Asp.Net MVC Project. Then we will add only one trivial controller/action/view. Simultaneously we will setup a new Vue.js project and add it to the same Visual Studio solution. We will use the Vue.js CLI for that and we will build a multipage project - with two different pages (components). At the end we will integrate this 2 Vue.js components into the MVC view we created at the start.
+We will start with an empty Asp.Net MVC Project. Then we will add only one trivial controller/action/view. Simultaneously we will setup a new Vue.js project and add it to the same Visual Studio solution. We will use the Vue.js CLI for that and we will build a multipage project (multiple entry points) - with two different pages (components). At the end we will integrate this 2 Vue.js components into the MVC view we created at the start.
 
 ## Software Versions
 
