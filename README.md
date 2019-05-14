@@ -20,3 +20,5 @@ At the time of writing I have Visual Studio Professional 2017/ Version 15.9.11 w
 ![Selecting the ASP.NET MVC project template](img/MVC_Project.PNG)
 
 ![Selecting the ASP.NET MVC project template](img/MVC_project_options.png)
+
+The we add `MVC 5 Controller - Empty` to the `Controllers` folder. We name it `HomeController` and leave the generated code as it is:
