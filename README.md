@@ -197,4 +197,6 @@ module.exports = {
 }
 ```
 
-So now if we run `npm run serve` we will see:
+So now if we run `npm run serve` and start web browser we will see:
+
+![Mode 1](img/mode1.png)
