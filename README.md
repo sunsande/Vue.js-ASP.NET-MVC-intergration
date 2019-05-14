@@ -144,3 +144,55 @@ new Vue({
 
 And similarly the `f2.js` (notice `f1 -> f2` and `#f1App -> #f2App`).
 
+### Clear the Vue.js Project from the Default Files
+
+In order to keep the example as simple as possible we may clear the default files created from Vue.js CLI template.
+These are `main.js`, `App.vue`, the whole content of the `components`, `assets` and `public` folders.
+
+### Setting up Mode 1 (Vue.js Development Mode with the Live Server)
+
+We have just deleted one important file - the `public/index.html`. Vue.js uses it as template wenn building the project. So let's create templates that suit our needs:
+
+```html
+<!-- public/featureTest1.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Test Feature1</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but vuejs_src doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="f1App"></div>
+  </body>
+</html>
+```
+
+Similarly we create `featureTest2.html`. Note that `f1App`and `f2App` correspond to the mounting points of the `Feature1` and `Feature2` components.
+
+We changed the name of the default template from `index.html` to `featureTest.html` so now we have to tell to Vue.js to use the new template. For that we need configuration file - we create `vuejs_src/vue.config.js`:
+
+```javascript
+module.exports = {
+    pages: {
+        feature1: {
+            entry: 'src/f1.js',
+            template: 'public/featureTest1.html',
+            filename: 'index.html',
+            title: 'Feature 1',
+            chunks: ['chunk-vendors', 'chunk-common', 'feature1']
+        },
+        feature2: {
+            entry: 'src/f2.js',
+            template: 'public/featureTest2.html',
+            filename: 'index2.html',
+            title: 'Feature 2',
+            chunks: ['chunk-vendors', 'chunk-common', 'feature2']
+        }
+    }
+}
+```
