@@ -90,4 +90,4 @@ Good to notice is that the Vue.js project comes with all kinds of extras like `.
 
 > **WARNING**: When adding the vuejs_src folder to the project DO NOT RIGHT-CLICK on the `vuejs_src` folder -> `Include In Project`! - there is a bug ot something and Visual Studio freezes. Maybe because of the size of the `node_modules` folder.
 
-We do not need to include the `node_modules` folder into the solution anyways, so just right-click any file or subfolder in `vuejs_src` and select `Include In Project`. (at the time of writing they are only 7 so it is not a big deal)
+We do not need to include the `node_modules` folder into the solution anyways, so just right-click any file or subfolder in `vuejs_src` other than `node_modules` and select `Include In Project`. (at the time of writing they are only 7 so it is not a big deal)
