@@ -241,3 +241,11 @@ module.exports = {
 **Notes:**
 
 - `filenameHashing` - currently Vue.js CLI cannot use the `filenameHashing` feature when the template is not the `index.html`. On the other hand we want all things running automatically when integrating into an ASP.NET MVC view. If the hash changes on every `vuejs_src` project build, one has to change the `src` parameter in the view on every `vuejs_src` build. At the moment I do not know if it is possible in Vue.js to use constant hashes and how to use hashes without the `index.html` template. This would be a point for improvement.
+
+- `outputDir` - this is the dedicated folder where the ready to use `Feature1` and `Feature2` components will be placed after the `vuejs_src` project build. After a successful build we can include this folder to the solution and also to the source control system.
+
+If you do not specify the `outputDir` you will get everything in the `vuejs_src/dist` folder by default
+
+So now let's build the components:
+```
+
