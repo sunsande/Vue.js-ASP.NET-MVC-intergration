@@ -66,4 +66,4 @@ We will keep the view simple:
 
 And so we are ready on the ASP.NET MVC part:
 
-![MVC in the browser](img/MVC_browser.png)
+![MVC in the browser](img/MVC_browser.PNG)
