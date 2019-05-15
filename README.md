@@ -321,3 +321,6 @@ are only the `feature1.js` and `feature2.js` components (much bigger in size!). 
 
 ![Mode 2](img/mode2.png)
 
+::: info
+You have new mail.
+:::
